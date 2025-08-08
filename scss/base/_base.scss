@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:regular,700'); // font = Raleway (font-weight regular, 700)
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700'); // font = Playfair Display (font-weight 700)
+@import url('https://fonts.googleapis.com/css?family=Roboto:300'); // font = Roboto (font-weight 300)
+
+/*
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+*/
+
+body {
+  font: var(--f-base); // Базовый шрифт
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+a {
+  color: var(--white);
+  transition: 0.2s ease-in-out;
+  
+  &:hover {
+    color: var(--accent);
+  }   
+}
+
+.container {
+  max-width: 1140px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}

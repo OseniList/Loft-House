@@ -1,0 +1,15 @@
+:root {
+  // Fonts
+  --font: 'Raleway', sans-serif; // базовый шрифт 
+  --font-accent:'Playfair Display', serif; // акцентный шрифт
+  --font-secondary: 'Roboto', sans-serif; // 3-тестепенный шрифт
+
+  // Raleway variants
+  --f-base: 16px var(--font);
+
+  // Colors
+  --dark: #242B33;
+  --accent: #D4C17F;
+  --white: #ffffff;
+  --footer-bg: #2D343C;
+} 
