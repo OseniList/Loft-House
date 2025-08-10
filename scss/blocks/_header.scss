@@ -10,3 +10,28 @@
   ),
   url('.././img/header/header-bg.jpg')
 }
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__nav__list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header__nav-list-item {
+
+}

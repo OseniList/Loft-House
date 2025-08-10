@@ -133,4 +133,16 @@ a:hover {
 .header {
   min-height: 840px;
   background: linear-gradient(180deg, rgb(36, 43, 51) 12%, rgba(45, 52, 60, 0.38) 51%, rgb(36, 43, 51) 92%), url(".././img/header/header-bg.jpg");
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__list {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=main.css.map */
