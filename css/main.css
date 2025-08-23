@@ -131,6 +131,7 @@ a:hover {
 }
 
 .header {
+  padding-top: 30px;
   min-height: 840px;
   background: linear-gradient(180deg, rgb(36, 43, 51) 12%, rgba(45, 52, 60, 0.38) 51%, rgb(36, 43, 51) 92%), url(".././img/header/header-bg.jpg");
 }
@@ -145,4 +146,21 @@ a:hover {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.logo {
+  cursor: pointer;
+  animation-name: logoJumping;
+  animation-duration: 850ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes logoJumping {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px) skew(1deg, -1.5deg);
+  }
 }/*# sourceMappingURL=main.css.map */
