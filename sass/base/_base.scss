@@ -12,11 +12,14 @@ body {
   font: var(--f-base); // Базовый шрифт
   color: var(--white);
   background-color: var(--dark);
+
+  text-rendering: geometricPrecision;
 }
 
 a {
+  display: inline-block;
   color: var(--white);
-  transition: 0.2s ease-in-out;
+  // transition: 0.2s ease-in-out;
   
   &:hover {
     color: var(--accent);
