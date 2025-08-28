@@ -246,4 +246,17 @@ a:hover {
   to {
     transform: translateY(-5px) skew(1deg, -1.5deg);
   }
+}
+
+.words-jumping {
+  display: inline-block;
+  animation: titleWordsJump 999ms ease-in-out infinite alternate-reverse;
+}
+@keyframes titleWordsJump {
+  from {
+    transform: translateY(-3px);
+  }
+  to {
+    transform: translate(4px) skew(1deg, -2deg) scale3d(1.03, 1, 1);
+  }
 }/*# sourceMappingURL=main.css.map */
