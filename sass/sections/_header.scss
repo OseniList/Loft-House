@@ -79,18 +79,55 @@
   left: 50%;
   transform: translateX(-50%);
 
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   margin-top: 110px;
+  border-radius: 50%;
 
-  &:hover {
-    .header__scroll-img {
-      transform: translate(-50%, -50%) scale(1.2);
-      backdrop-filter: blur(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: 0.2s ease-in;
+
+  &:hover  {
+    transform: translate(-50%) scale(1.1);
+    
+    &::before {
+      width: 90px;
+      height: 90px;
+      visibility: visible;
+    }
+
+    .header__scroll-img-inner {
+      height: 26px;
+    }
+
+    .header__scroll-img-inner::before,
+    .header__scroll-img-inner::after {
+      opacity: 1;
+      width: 3px;
+      height: 12px;
     }
   }
-
 }
+
+.header__scroll::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  background-color: grey;
+  filter: blur(50px);
+
+  transition: all 0.2s ease-in;
+}
+
 
 .header__scroll-img {
   position: absolute;
@@ -103,19 +140,45 @@
   border: 3px solid var(--accent);
   border-radius: 30px;
   transition: transform 150ms ease-in, background-filter 150ms ease-in;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 3px;
-    height: 9px;
-    background-color: var(--accent);
-  }
 }
 
-// Все анимации для section header
+.header__scroll-img-inner {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
 
+  width: 3px;
+  height: 9px;
+  background-color: var(--accent);
+  border-radius: 4px;
+  
+  transition: all 0.4s ease-in-out;
+
+  &::before, &::after { 
+    content: '';
+    position: absolute;
+    top: 18px;
+
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: var(--accent);
+    border-radius: 4px;
+
+    transition: 
+                opacity 0.3s ease, 
+                width 250ms ease-in, 
+                height 250ms ease-in;
+  }
+
+  &::before {
+    right: -2px;
+    transform: translateX(40%) rotate(45deg)
+  }
+
+   &::after {
+    left: -2px;
+    transform: translateX(-40%) rotate(-45deg);
+  }
+}
