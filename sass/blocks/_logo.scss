@@ -1,0 +1,19 @@
+.logo {
+    cursor: pointer;
+    
+    animation-name: logoJumping;
+    animation-duration: 850ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes logoJumping {
+        from {
+            transform: translateY(5px) ;
+        }
+
+        to {
+            transform: translateY(-5px) skew(1deg, -1.5deg);
+        }
+    }
+}   
