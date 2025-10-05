@@ -134,18 +134,25 @@ a:hover {
   padding-top: 30px;
   min-height: 840px;
   background: linear-gradient(180deg, rgb(36, 43, 51) 12%, rgba(45, 52, 60, 0.38) 51%, rgb(36, 43, 51) 92%), url(".././img/header/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 200px;
 }
 
-.header__nav__list {
-  display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+.header__title {
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
+  font-family: var(--font-accent);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 113px;
 }
 
 .logo {
@@ -166,4 +173,28 @@ a:hover {
     opacity: 0.7;
     transform: translateY(3px) rotate(-1deg);
   }
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-list-item {
+  position: relative;
+  font-size: 18px;
+}
+.nav-list-item:hover::before {
+  min-width: 100%;
+}
+
+.nav-list-item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  min-width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: min-width 250ms ease-out 100ms, height 250ms ease-out;
 }/*# sourceMappingURL=main.css.map */

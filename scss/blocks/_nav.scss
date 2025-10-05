@@ -1,0 +1,29 @@
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list-item {
+    position: relative;
+    font-size: 18px;
+
+    &:hover {
+        &::before {
+            min-width: 100%;
+        }
+    }
+}
+
+.nav-list-item::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    
+    min-width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: min-width 250ms ease-out 100ms, height 250ms ease-out;
+}

@@ -9,20 +9,28 @@
     rgba(36, 43, 51, 1) 92%
 
   ),
-  url('.././img/header/header-bg.jpg')
+  url('.././img/header/header-bg.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 200px;
 }
 
-.header__nav__list {
-  display: flex;
-  column-gap: 40px;
-}
+.header__title {
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
 
-.header__nav-list-item {
-  
+  font-family: var(--font-accent);
+  font-size: 48px;
+  font-weight: 700;
+
+  margin-bottom: 113px;
 }
