@@ -1,0 +1,21 @@
+{
+  "name": "LoftHouse",
+  "short_name": "L-House",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#2f363f",
+  "background_color": "#303c4a",
+  "display": "standalone"
+}
