@@ -4,4 +4,4 @@
 - SCSS,
 
 ```
-[Посмотреть демоверсию](https://osenilist.github.io/Loft-House/)
+[Посмотреть демо](https://osenilist.github.io/Loft-House/)
